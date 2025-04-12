@@ -192,8 +192,8 @@ class ScreenTimeApp(QMainWindow):
         self.total_seconds = 0
         self.is_running = False
         self.alert_enabled = True
-        self.alert_interval = 10  # 30 minutos en segundos
-        self.break_time = 10  # 2 minutos de descanso
+        self.alert_interval = 30 * 60  # 30 minutos en segundos
+        self.break_time = 2 * 60  # 2 minutos de descanso
     
     def setup_timers(self):
         self.timer = QTimer(self)
